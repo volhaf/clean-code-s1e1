@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -45,22 +45,22 @@ body {
   display: flex;
 }
 
-ul {
+.list {
   margin: 0;
   padding: 0px;
 }
 
-li, 
+.item, 
 .title {
   list-style: none;
 }
 
-input,
-item__button {
+.item__input,
+.item__button {
   outline: none;
 }
 
-item__button {
+.item__button {
   background: none;
   border: 0px;
   color: #888;
@@ -70,7 +70,7 @@ item__button {
   cursor: pointer;
 }
 
-item__button:hover {
+.item__button:hover {
   color: #3a3a3a;
 }
 
@@ -85,7 +85,7 @@ item__button:hover {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.item__input[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,7 +98,7 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.item__input[type="text"]:focus {
   color: #333;
 }
 
@@ -107,18 +107,18 @@ input[type="text"]:focus {
   margin-top: 1rem;
 }
 
-input#add__title {
+.item__input#add__title {
     display: inline-block;
     flex-grow: 1;
     width: 318px;
 }
 
-li.list__item{
+.item.list__item{
     border-bottom: 0;
 }
 
 /* Task list */
-li {
+.item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -127,22 +127,22 @@ li {
   align-items: center;
 }
 
-li > * {
+.item > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.item > .item__input[type="checkbox"] {
   margin: 0 10px;
 }
 
-li > label {
+.item > .item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type="text"] {
+.item > .item__input[type="text"] {
   width: 226px;
 }
 
@@ -157,21 +157,21 @@ li > input[type="text"] {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.list#completed-tasks .item__label{
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task  */
-ul li input[type="text"] {
+.item__input_none {
   display: none;
 }
 
-ul li.todo__item_edit input[type="text"] {
+.item__input_edit {
   display: inline-block;
   width: 224px;
 }
 
-ul li.todo__item_edit label {
+.item__label_edit {
   display: none;
 }

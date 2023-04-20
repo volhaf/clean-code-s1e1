@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen">
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <img class="header__image" src="./eisenhower-matrix.jpg" alt="Eisenhower priority matrix">
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
@@ -16,7 +16,7 @@
     <main class="main">
       <section class="main__add">
         <h3 class="add__title title">Add Item</h3>
-        <ul class="add__list" id="topSectionForAddingElementToList">
+        <ul class="add__list list" id="topSectionForAddingElementToList">
           <li class="add__item item">
             <input id="new-task" class="item__input" type="text">
             <button class="item__button">Add</button>
@@ -25,11 +25,11 @@
       </section>
       <section class="main__todo">
         <h3 class="todo__title title">Todo</h3>
-        <ul class="todo__list" id="incompleteTasks">
+        <ul class="todo__list list" id="incompleteTasks">
           <li class="todo__item item">
             <input class="item__input" type="checkbox">
             <label class="item__label">Pay Bills</label>
-            <input type="text" class="item__input">
+            <input type="text" class="item__input item__input_none">
             <button class="item__button item__button_edit">Edit</button>
             <button class="item__button item__button_delete">
               <img class="button-delete__image"  src="./remove.svg" alt="remove">
@@ -48,11 +48,11 @@
       </section>
       <section class="Completed">
         <h3 class="completed__title title">Completed</h3>
-        <ul class="completed__list" id="completed-tasks">
+        <ul class="completed__list list" id="completed-tasks">
           <li class="completed__item item">
             <input class="item__input" type="checkbox" checked>
-            <label class="item__label">See the Doctor</label>
-            <input class="item__input" type="text" class="task">
+            <label class="item__label item__label_edit">See the Doctor</label>
+            <input class="item__input item__input_edit item__input_none" type="text">
             <button class="item__button item__button_edit">Edit</button>
             <button class="item__button item__button_delete">
               <img class="button-delete__image" src="./remove.svg" alt="remove">
