@@ -17,7 +17,7 @@
       <section class="main__add ">
         <h3 class="add__title title">Add Item</h3>
         <ul class="add__list list" id="topSectionForAddingElementToList">
-          <li class="add__item item list__item_mod">
+          <li class="add__item item list__item_mod list__item">
             <input class="item__input item__text item__input_add" type="text">
             <button class="item__button item__button_add">Add</button>
           </li>
@@ -26,21 +26,21 @@
       <section class="main__todo">
         <h3 class="todo__title title">Todo</h3>
         <ul class="todo__list list" id="incompleteTasks">
-          <li class="todo__item item">
+          <li class="todo__item item list__item">
             <input class="item__input item__input_checkbox" type="checkbox">
             <label class="item__label">Pay Bills</label>
             <input type="text" class="item__input item__input_none item__text">
             <button class="item__button item__button_edit">Edit</button>
-            <button class="item__button item__button_delete">
+            <button class="button-delete item__button item__button_delete">
               <img class="button-delete__image"  src="./remove.svg" alt="remove">
             </button>
           </li>
-          <li class="todo__item item todo__item_edit">
+          <li class="todo__item item todo__item_edit list__item">
             <input class="item__input item__input_checkbox" type="checkbox">
-            <label class="item__label item__label_none">Go Shopping</label>
+            <label class="item__label item__label_none item__label_edit">Go Shopping</label>
             <input class="item__input item__input_edit item__text" type="text" value="Go Shopping">
             <button class="item__button item__button_edit">Save</button>
-            <button class="item__button item__button_delete">
+            <button class="button-delete item__button item__button_delete">
               <img class="button-delete__image" src="./remove.svg" alt="remove">
             </button>
           </li>
@@ -49,12 +49,12 @@
       <section class="main__completed">
         <h3 class="completed__title title">Completed</h3>
         <ul class="completed__list list" id="completed-tasks">
-          <li class="completed__item item">
+          <li class="completed__item item list__item">
             <input class="item__input item__input_checkbox item__input_checked" type="checkbox" checked>
-            <label class="item__label item__label_edit">See the Doctor</label>
+            <label class="item__label item__label_line_edit">See the Doctor</label>
             <input class="item__input item__text item__input_none" type="text">
             <button class="item__button item__button_edit">Edit</button>
-            <button class="item__button item__button_delete">
+            <button class="button-delete item__button_delete">
               <img class="button-delete__image" src="./remove.svg" alt="remove">
             </button>
           </li>
